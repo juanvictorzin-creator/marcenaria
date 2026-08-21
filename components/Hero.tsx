@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, type Variants, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowDown, ArrowRight, Check } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 
 const benefits = ["Projeto personalizado", "Produção cuidadosa", "Montagem especializada"];
 
-const reveal = {
+const reveal: Variants = {
   hidden: { opacity: 0, y: 28 },
   show: { opacity: 1, y: 0, transition: { duration: 0.85, ease: [0.16, 1, 0.3, 1] } },
 };
