@@ -30,15 +30,15 @@ const STEPS = [
 
 export function Process() {
   return (
-    <section id="processo" className="bg-paper py-24 text-ink sm:py-28 lg:py-36">
+    <section id="processo" className="bg-paper py-16 text-ink sm:py-28 lg:py-36">
       <div className="container-premium">
-        <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
+        <div className="grid gap-9 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-4">
             <p className="eyebrow mb-5">Como funciona</p>
-            <h2 className="text-balance font-display text-4xl leading-[1.05] tracking-tight sm:text-5xl">
+            <h2 className="text-balance font-display text-3xl leading-[1.08] tracking-tight sm:text-5xl">
               Um caminho claro da ideia à instalação.
             </h2>
-            <p className="mt-6 max-w-md text-sm leading-7 text-ink/60">
+            <p className="mt-4 max-w-md text-sm leading-6 text-ink/60 sm:mt-6 sm:leading-7">
               Você participa das decisões importantes e sabe o que acontece em cada etapa do projeto.
             </p>
             <a
@@ -47,7 +47,7 @@ export function Process() {
               rel="noreferrer"
               className={cn(
                 buttonVariants({ variant: "primary", size: "lg" }),
-                "mt-8 w-full sm:w-auto"
+                "mt-6 w-full sm:mt-8 sm:w-auto"
               )}
             >
               <FaWhatsapp className="text-lg" aria-hidden="true" />
@@ -59,7 +59,7 @@ export function Process() {
           <div className="relative lg:col-span-8">
             <div className="absolute bottom-10 left-[23px] top-10 w-px bg-ink/15 sm:hidden" />
             <div className="hidden h-px w-full bg-ink/15 sm:absolute sm:left-0 sm:right-0 sm:top-8 sm:block" />
-            <div className="grid gap-7 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12">
+            <div className="grid gap-6 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12">
               {STEPS.map((step, index) => (
                 <Reveal key={step.title} delay={index * 0.07}>
                   <article className="relative flex gap-5 sm:block">
@@ -68,8 +68,8 @@ export function Process() {
                     </div>
                     <div className="pt-1 sm:pt-6">
                       <span className="text-[9px] font-semibold uppercase tracking-[0.2em] text-wood">Etapa 0{index + 1}</span>
-                      <h3 className="mt-2 font-display text-2xl">{step.title}</h3>
-                      <p className="mt-3 text-sm leading-6 text-ink/60">{step.description}</p>
+                      <h3 className="mt-1.5 font-display text-xl sm:mt-2 sm:text-2xl">{step.title}</h3>
+                      <p className="mt-2 text-sm leading-5 text-ink/60 sm:mt-3 sm:leading-6">{step.description}</p>
                     </div>
                   </article>
                 </Reveal>

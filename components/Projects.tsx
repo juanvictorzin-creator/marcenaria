@@ -31,18 +31,18 @@ const PROJECTS = [
 
 export function Projects() {
   return (
-    <section id="projetos" className="bg-surface py-24 sm:py-28 lg:py-36">
+    <section id="projetos" className="bg-surface py-16 sm:py-28 lg:py-36">
       <div className="container-premium">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-12 grid gap-7 md:mb-16 md:grid-cols-12 md:items-end"
+          className="mb-8 grid gap-5 md:mb-16 md:grid-cols-12 md:items-end"
         >
           <div className="md:col-span-8">
             <p className="eyebrow mb-5">Ambientes que inspiram</p>
-            <h2 className="text-balance max-w-3xl font-display text-4xl leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+            <h2 className="text-balance max-w-3xl font-display text-3xl leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
               Materiais, proporções e detalhes em harmonia.
             </h2>
           </div>
@@ -59,7 +59,7 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.8, delay: index * 0.07, ease: [0.16, 1, 0.3, 1] }}
-              className={cn("group relative min-h-[390px] overflow-hidden", project.className)}
+              className={cn("group relative min-h-[280px] overflow-hidden sm:min-h-[390px]", project.className)}
             >
               <Image
                 src={project.image}
@@ -69,15 +69,15 @@ export function Projects() {
                 className="object-cover transition-transform duration-1000 ease-premium group-hover:scale-[1.05]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/10 to-transparent" />
-              <figcaption className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
+              <figcaption className="absolute inset-x-0 bottom-0 p-5 sm:p-8">
                 <span className="text-[9px] uppercase tracking-[0.22em] text-cream/55">{project.category}</span>
-                <h3 className="mt-2 font-display text-2xl text-cream sm:text-3xl">{project.title}</h3>
+                <h3 className="mt-2 font-display text-xl text-cream sm:text-3xl">{project.title}</h3>
               </figcaption>
             </motion.figure>
           ))}
         </div>
 
-        <div className="mt-10 flex flex-col items-start justify-between gap-5 border-t border-line pt-8 sm:flex-row sm:items-center">
+        <div className="mt-8 flex flex-col items-start justify-between gap-5 border-t border-line pt-6 sm:mt-10 sm:flex-row sm:items-center sm:pt-8">
           <p className="max-w-xl text-sm leading-6 text-muted/55">
             Tem uma referência salva? Envie pelo WhatsApp. Ela ajuda a entender o estilo que você busca.
           </p>

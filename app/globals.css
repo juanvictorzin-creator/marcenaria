@@ -91,11 +91,6 @@ body {
   }
 }
 
-@media (max-width: 767px) {
-  body {
-    padding-bottom: 4.75rem;
-  }
-}
 
 @media (prefers-reduced-motion: reduce) {
   *,

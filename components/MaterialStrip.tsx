@@ -12,7 +12,7 @@ export function MaterialStrip() {
   const repeatedItems = [...ITEMS, ...ITEMS];
 
   return (
-    <div className="relative overflow-hidden border-b border-ink/10 bg-cream py-4 text-ink">
+    <div className="relative hidden overflow-hidden border-b border-ink/10 bg-cream py-4 text-ink sm:block">
       <div className="flex w-max animate-marquee gap-10">
         {repeatedItems.map((item, index) => (
           <span

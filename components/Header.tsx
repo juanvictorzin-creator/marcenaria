@@ -50,16 +50,16 @@ export function Header() {
           : "border-transparent bg-gradient-to-b from-background/70 to-transparent"
       )}
     >
-      <div className="container-premium flex h-[76px] items-center justify-between md:h-24">
+      <div className="container-premium flex h-[68px] items-center justify-between md:h-24">
         <a href="#top" className="group flex items-center gap-3" aria-label="Arte JE — início">
-          <span className="flex h-10 w-10 items-center justify-center border border-copper/50 font-display text-sm italic text-copper transition-colors group-hover:border-copper">
+          <span className="flex h-9 w-9 items-center justify-center border border-copper/50 font-display text-xs italic text-copper transition-colors group-hover:border-copper sm:h-10 sm:w-10 sm:text-sm">
             JE
           </span>
           <span className="flex flex-col">
-            <span className="font-display text-lg leading-none tracking-[0.18em] text-foreground sm:text-xl">
+            <span className="font-display text-base leading-none tracking-[0.18em] text-foreground sm:text-xl">
               ARTE JE
             </span>
-            <span className="mt-1 text-[8px] uppercase tracking-[0.24em] text-muted/55">
+            <span className="mt-1 hidden text-[8px] uppercase tracking-[0.24em] text-muted/55 min-[380px]:block">
               Marcenaria sob medida
             </span>
           </span>
@@ -107,7 +107,7 @@ export function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-x-0 bottom-0 top-[76px] z-40 flex flex-col border-t border-line bg-background px-5 pb-8 pt-10 md:hidden"
+            className="fixed inset-x-0 bottom-0 top-[68px] z-40 flex flex-col border-t border-line bg-background px-5 pb-7 pt-6 md:hidden"
           >
             <nav className="flex flex-1 flex-col" aria-label="Navegação mobile">
               {NAV_LINKS.map((link, index) => (
@@ -118,7 +118,7 @@ export function Header() {
                   initial={{ opacity: 0, x: -16 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.05 + index * 0.06 }}
-                  className="border-b border-line py-5 font-display text-3xl text-foreground"
+                  className="border-b border-line py-4 font-display text-2xl text-foreground"
                 >
                   <span className="mr-4 align-middle font-body text-[9px] tracking-[0.2em] text-copper">
                     0{index + 1}
