@@ -1,34 +1,32 @@
-# Marcenaria Arte JE — Landing Page
+# Marcenaria Arte JE — versão estática
 
-Landing page responsiva para apresentação comercial e captação de orçamentos pelo WhatsApp. Construída com Next.js 14, TypeScript, Tailwind CSS e Framer Motion.
+Landing page responsiva feita apenas com HTML, CSS e JavaScript, sem React, Next.js, TypeScript ou bibliotecas de interface.
 
-## Configuração
+## Arquivos principais
 
-Crie um arquivo `.env.local` na raiz do projeto:
+- `index.html`: conteúdo e estrutura da página.
+- `styles.css`: identidade visual e responsividade.
+- `script.js`: menu mobile, animações, parallax e links do WhatsApp.
+- `build.js`: prepara a pasta `dist` para publicação; não faz parte do site no navegador.
 
-```env
-NEXT_PUBLIC_WHATSAPP_NUMBER=5511999999999
-NEXT_PUBLIC_SITE_URL=https://seu-dominio.com.br
+## Configurar o WhatsApp
+
+Abra `script.js` e informe o número com DDI e DDD, usando somente dígitos:
+
+```js
+const WHATSAPP_NUMBER = "5511999999999";
 ```
 
-O número deve conter DDI e DDD, somente dígitos. Sem essa variável, os botões abrem o WhatsApp com a mensagem pronta, mas sem destinatário definido.
+Sem um número definido, os botões abrem o WhatsApp com a mensagem pronta e permitem escolher o contato.
 
-## Desenvolvimento
+## Abrir localmente
+
+Abra `index.html` diretamente no navegador ou execute um servidor estático nesta pasta:
 
 ```bash
-npm install
-npm run dev
+python -m http.server 8000
 ```
 
-Acesse `http://localhost:3000`.
+Depois acesse `http://localhost:8000`.
 
-## Validação
-
-```bash
-npm run lint
-npm run build
-```
-
-## Conteúdo
-
-As imagens atuais são referências do Unsplash. Para publicação comercial, substitua-as pelas fotos reais dos projetos da Arte JE. Os textos não incluem números, prazos, endereços ou garantias não confirmados.
+As imagens atuais são referências do Unsplash. Para uso comercial, substitua-as pelas fotos reais dos projetos da Arte JE.
