@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -38,7 +38,7 @@
     <script src="script.js" defer></script>
   </head>
 
-  <body>
+  <body class="site-clean">
     <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
     <header class="site-header" data-header>
@@ -85,7 +85,7 @@
           rel="noreferrer"
           data-whatsapp="Olá! Vim pelo site da Marcenaria Arte JE e gostaria de solicitar um orçamento."
         >
-          <span aria-hidden="true">☎</span>
+          <span aria-hidden="true"><i class="fi fi-brands-whatsapp"></i></span>
           Conversar no WhatsApp
         </a>
       </div>
@@ -93,128 +93,142 @@
 
     <main id="conteudo">
       <section class="hero grain" id="top">
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="container hero-grid">
+        <div class="hero-visual" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=85&w=2200&auto=format&fit=crop"
+            alt=""
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="container hero-content">
           <div class="hero-copy">
-            <div class="eyebrow-row hero-reveal">
-              <span></span>
-              <p class="eyebrow">Móveis planejados para a vida real</p>
+            <div class="hero-craft-label hero-reveal">
+              <span class="joinery-mark" aria-hidden="true"><i></i><i></i></span>
+              <p>
+                Marcenaria sob medida
+                <small>PROJETO • PRODUÇÃO • MONTAGEM</small>
+              </p>
             </div>
-
-            <h1 class="hero-title hero-reveal">
-              Seu espaço com mais <em>beleza</em>, função e identidade.
+            <h1 class="hero-title hero-title-animated hero-reveal">
+              <span class="title-line"><span>Seu espaço com mais</span></span>
+              <span class="title-line"><span><em>beleza</em>, função e identidade.</span></span>
             </h1>
-
-            <p class="hero-description hero-reveal">
-              A Arte JE transforma ideias em móveis sob medida, pensados para aproveitar cada centímetro e
-              acompanhar a sua rotina por muitos anos.
-            </p>
-
-            <div class="hero-actions hero-reveal">
-              <a
-                class="button button-primary"
-                href="https://wa.me/"
-                target="_blank"
-                rel="noreferrer"
-                data-whatsapp="Olá! Quero transformar um ambiente com a Marcenaria Arte JE. Podemos conversar sobre meu projeto?"
-              >
-                <span aria-hidden="true">☎</span>
-                Solicitar orçamento
-                <span aria-hidden="true">→</span>
-              </a>
-              <a class="button button-outline" href="#projetos">Ver ambientes</a>
-            </div>
-
-            <ul class="benefits hero-reveal" aria-label="Benefícios">
-              <li><span aria-hidden="true">✓</span>Projeto personalizado</li>
-              <li><span aria-hidden="true">✓</span>Produção cuidadosa</li>
-              <li><span aria-hidden="true">✓</span>Montagem especializada</li>
-            </ul>
-          </div>
-
-          <div class="hero-visual hero-reveal">
-            <div class="corner-detail" aria-hidden="true"></div>
-            <div class="hero-image-frame">
-              <div class="hero-image-parallax" data-hero-image>
-                <img
-                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=85&w=1800&auto=format&fit=crop"
-                  alt="Cozinha contemporânea com armários de madeira natural feitos sob medida"
-                  fetchpriority="high"
-                />
-              </div>
-              <div class="image-shade" aria-hidden="true"></div>
-            </div>
-            <div class="hero-note">
-              <p class="eyebrow">Do desenho à montagem</p>
-              <p>Um projeto criado em torno de você.</p>
-            </div>
           </div>
         </div>
 
         <a class="discover-link" href="#diferenciais"><span aria-hidden="true">↓</span>Descubra a Arte JE</a>
       </section>
 
-      <div class="material-strip" aria-label="Tipos de projeto">
-        <div class="marquee-track">
-          <div class="marquee-group">
-            <span>Projeto personalizado<i></i></span><span>Cozinhas<i></i></span>
-            <span>Dormitórios<i></i></span><span>Salas<i></i></span><span>Home office<i></i></span>
-            <span>Ambientes comerciais<i></i></span><span>Montagem especializada<i></i></span>
-          </div>
-          <div class="marquee-group" aria-hidden="true">
-            <span>Projeto personalizado<i></i></span><span>Cozinhas<i></i></span>
-            <span>Dormitórios<i></i></span><span>Salas<i></i></span><span>Home office<i></i></span>
-            <span>Ambientes comerciais<i></i></span><span>Montagem especializada<i></i></span>
-          </div>
-        </div>
-      </div>
-
       <section class="section section-light differentials" id="diferenciais">
         <div class="container differentials-grid">
-          <div class="differentials-image reveal">
-            <img
-              src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=85&w=1400&auto=format&fit=crop"
-              alt="Detalhe de marcenaria em madeira natural em ambiente contemporâneo"
-              loading="lazy"
-            />
-            <div class="image-shade" aria-hidden="true"></div>
-            <div class="image-caption">
-              <span>Nossa forma de trabalhar</span>
-              <p>Medir, planejar, produzir e cuidar.</p>
-            </div>
-          </div>
-
           <div class="differentials-content">
+
             <div class="reveal">
-              <p class="eyebrow">Por que escolher a Arte JE</p>
-              <h2>Feito para caber no espaço e fazer sentido na sua rotina.</h2>
+              <p class="eyebrow">O cuidado por trás de cada projeto</p>
+
+              <h2>Do primeiro centímetro à última regulagem.</h2>
+
               <p class="section-intro">
-                Marcenaria sob medida é mais do que preencher uma parede. É combinar ergonomia, organização e
-                estética em uma solução que parece ter nascido junto com o ambiente.
+                Na Arte JE, o móvel não nasce de uma medida padrão.
+                Cada projeto parte do ambiente real, das necessidades do cliente
+                e das escolhas definidas antes de entrar em produção.
               </p>
             </div>
 
             <div class="feature-grid">
+
               <article class="feature-card reveal">
-                <div class="card-top"><span class="feature-symbol" aria-hidden="true">⌗</span><em>01</em></div>
-                <h3>Cada centímetro bem pensado</h3>
-                <p>Soluções desenhadas a partir das medidas, da circulação e das necessidades reais do ambiente.</p>
+                <div class="card-top">
+                  <span class="feature-symbol" aria-hidden="true">
+                    <svg viewBox="0 0 64 64">
+                      <circle cx="25" cy="27" r="15"></circle>
+                      <circle cx="25" cy="27" r="8"></circle>
+                      <path d="M36 36h20v12H34"></path>
+                      <path d="M41 39v5"></path>
+                      <path d="M46 39v3"></path>
+                      <path d="M51 39v5"></path>
+                    </svg>
+                  </span>
+                  <em>01</em>
+                </div>
+
+                <h3>Medição feita no ambiente</h3>
+
+                <p>
+                  Conferimos medidas, paredes, circulação e pontos importantes
+                  do espaço antes de definir o móvel.
+                </p>
               </article>
+
               <article class="feature-card reveal" style="--delay: 60ms">
-                <div class="card-top"><span class="feature-symbol" aria-hidden="true">✎</span><em>02</em></div>
-                <h3>Decisões com clareza</h3>
-                <p>Você acompanha materiais, acabamentos e detalhes antes de a produção começar.</p>
+                <div class="card-top">
+                  <span class="feature-symbol" aria-hidden="true">
+                    <svg viewBox="0 0 64 64">
+                      <rect x="12" y="12" width="27" height="33"></rect>
+                      <rect x="19" y="18" width="27" height="33"></rect>
+                      <rect x="26" y="25" width="27" height="33"></rect>
+                    </svg>
+                  </span>
+                  <em>02</em>
+                </div>
+
+                <h3>Materiais definidos antes da produção</h3>
+
+                <p>
+                  Acabamentos, ferragens, cores e detalhes são alinhados
+                  antes de a primeira peça ser produzida.
+                </p>
               </article>
+
               <article class="feature-card reveal" style="--delay: 120ms">
-                <div class="card-top"><span class="feature-symbol" aria-hidden="true">✦</span><em>03</em></div>
-                <h3>Acabamento que se percebe</h3>
-                <p>Cuidado nos encontros, ferragens e superfícies para um resultado preciso e agradável ao toque.</p>
+                <div class="card-top">
+                  <span class="feature-symbol" aria-hidden="true">
+                    <svg viewBox="0 0 64 64">
+                      <path d="M11 48h42"></path>
+                      <path d="M16 48v-6h32v6"></path>
+                      <circle cx="34" cy="34" r="14"></circle>
+                      <circle cx="34" cy="34" r="4"></circle>
+                      <path d="M34 20v-5"></path>
+                      <path d="M34 53v-5"></path>
+                      <path d="M20 34h-5"></path>
+                      <path d="M53 34h-5"></path>
+                      <path d="M24 24l-4-4"></path>
+                      <path d="M48 48l-4-4"></path>
+                      <path d="M44 24l4-4"></path>
+                      <path d="M24 44l-4 4"></path>
+                    </svg>
+                  </span>
+                  <em>03</em>
+                </div>
+
+                <h3>Produção feita para aquele projeto</h3>
+
+                <p>
+                  Cada peça é cortada, preparada e montada seguindo
+                  as medidas e escolhas aprovadas para o ambiente.
+                </p>
               </article>
+
               <article class="feature-card reveal" style="--delay: 180ms">
-                <div class="card-top"><span class="feature-symbol" aria-hidden="true">◇</span><em>04</em></div>
-                <h3>Acompanhamento até o final</h3>
-                <p>Do primeiro contato à montagem, o projeto segue um fluxo organizado e próximo.</p>
+                <div class="card-top">
+                  <span class="feature-symbol" aria-hidden="true">
+                    <svg viewBox="0 0 64 64">
+                      <path d="M44 12a12 12 0 0 0-14 15L13 44a5 5 0 0 0 7 7l17-17a12 12 0 0 0 15-14l-8 8-8-8Z"></path>
+                    </svg>
+                  </span>
+                  <em>04</em>
+                </div>
+
+                <h3>Montagem conferida no local</h3>
+
+                <p>
+                  Depois da instalação, alinhamentos, portas, gavetas
+                  e ferragens passam pelos ajustes finais.
+                </p>
               </article>
+
             </div>
           </div>
         </div>
@@ -321,40 +335,129 @@
         </div>
       </section>
 
-      <section class="section section-paper process" id="processo">
-        <div class="container process-grid">
-          <div class="process-intro reveal">
-            <p class="eyebrow">Como funciona</p>
-            <h2>Um caminho claro da ideia à instalação.</h2>
-            <p class="section-intro">Você participa das decisões importantes e sabe o que acontece em cada etapa do projeto.</p>
+      <section class="section atelier-process" id="processo">
+        <span class="atelier-process-ghost" aria-hidden="true">01</span>
+
+        <div class="container atelier-process-layout">
+          <div class="atelier-process-copy reveal">
+            <p class="atelier-process-kicker">Do primeiro contato à instalação</p>
+
+            <h2>
+              Seu móvel começa<br>
+              com a medida certa<br>
+              e termina pronto<br>
+              para fazer parte<br>
+              da sua rotina.
+            </h2>
+
+            <p class="atelier-process-description">
+              A Arte JE acompanha cada etapa: entende o ambiente,
+              define materiais e acabamentos, produz cada peça
+              sob medida e realiza a montagem com atenção
+              aos detalhes.
+            </p>
+
+            <div class="atelier-process-divider" aria-hidden="true"></div>
+
+            <p class="atelier-process-location">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s6-5.3 6-11a6 6 0 1 0-12 0c0 5.7 6 11 6 11Z"></path>
+                <circle cx="12" cy="10" r="2.2"></circle>
+              </svg>
+              Atendimento personalizado no Rio de Janeiro
+            </p>
+          </div>
+
+          <div class="atelier-process-right">
+            <div class="atelier-process-grid">
+
+              <article class="atelier-process-card reveal">
+                <span class="atelier-card-corner" aria-hidden="true"></span>
+
+                <div class="atelier-card-top">
+                  <svg class="atelier-card-icon" viewBox="0 0 64 64" aria-hidden="true">
+                    <circle cx="25" cy="27" r="15"></circle>
+                    <circle cx="25" cy="27" r="9"></circle>
+                    <path d="M36 36h20v12H34"></path>
+                    <path d="M41 39v5M46 39v3M51 39v5"></path>
+                  </svg>
+                  <span class="atelier-card-number">01</span>
+                </div>
+
+                <h3>Visita e medição no local</h3>
+                <p>Analisamos medidas, circulação<br class="desktop-only"> e necessidades do ambiente.</p>
+              </article>
+
+              <article class="atelier-process-card reveal" style="--delay: 70ms">
+                <span class="atelier-card-corner" aria-hidden="true"></span>
+
+                <div class="atelier-card-top">
+                  <svg class="atelier-card-icon" viewBox="0 0 64 64" aria-hidden="true">
+                    <rect x="13" y="13" width="28" height="31"></rect>
+                    <rect x="19" y="19" width="28" height="31"></rect>
+                    <rect x="25" y="25" width="28" height="31"></rect>
+                  </svg>
+                  <span class="atelier-card-number">02</span>
+                </div>
+
+                <h3>Materiais e orçamento definidos</h3>
+                <p>Você aprova acabamentos,<br class="desktop-only"> ferragens, valores e etapas.</p>
+              </article>
+
+              <article class="atelier-process-card reveal" style="--delay: 140ms">
+                <span class="atelier-card-corner" aria-hidden="true"></span>
+
+                <div class="atelier-card-top">
+                  <svg class="atelier-card-icon" viewBox="0 0 64 64" aria-hidden="true">
+                    <path d="M12 47h41"></path>
+                    <path d="M17 47v-6h32v6"></path>
+                    <path d="M22 40c0-12 9-22 21-22"></path>
+                    <path d="M23 35l-4-4 6-2-2-7 7 2 2-7 5 5 5-5 2 7 7-2-2 7 6 2-5 5"></path>
+                    <circle cx="35" cy="36" r="4"></circle>
+                  </svg>
+                  <span class="atelier-card-number">03</span>
+                </div>
+
+                <h3>Produção sob medida</h3>
+                <p>Cada peça segue as medidas<br class="desktop-only"> e escolhas aprovadas.</p>
+              </article>
+
+              <article class="atelier-process-card reveal" style="--delay: 210ms">
+                <span class="atelier-card-corner" aria-hidden="true"></span>
+
+                <div class="atelier-card-top">
+                  <svg class="atelier-card-icon" viewBox="0 0 64 64" aria-hidden="true">
+                    <path d="M16 48 42 22"></path>
+                    <path d="m38 18 4-4 8 8-4 4"></path>
+                    <path d="m14 50-2 6 6-2 27-27-4-4Z"></path>
+                    <path d="M46 14 50 10l4 4-4 4"></path>
+                  </svg>
+                  <span class="atelier-card-number">04</span>
+                </div>
+
+                <h3>Montagem e ajustes finais</h3>
+                <p>Instalamos, conferimos<br class="desktop-only"> alinhamentos e entregamos<br class="desktop-only"> tudo pronto.</p>
+              </article>
+
+              <span class="atelier-grid-mark atelier-grid-mark-top" aria-hidden="true"></span>
+              <span class="atelier-grid-mark atelier-grid-mark-bottom" aria-hidden="true"></span>
+              <span class="atelier-grid-mark atelier-grid-mark-left" aria-hidden="true"></span>
+              <span class="atelier-grid-mark atelier-grid-mark-right" aria-hidden="true"></span>
+            </div>
+
             <a
-              class="button button-primary"
+              class="atelier-process-cta reveal"
               href="https://wa.me/"
               target="_blank"
               rel="noreferrer"
-              data-whatsapp="Olá! Gostaria de entender como funciona o projeto sob medida da Arte JE."
+              data-whatsapp="Olá! Vim pelo site da Arte JE e gostaria de solicitar uma visita técnica."
             >
-              <span aria-hidden="true">☎</span>Tirar uma dúvida<span aria-hidden="true">→</span>
+              <span>Solicitar visita técnica</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 12h15"></path>
+                <path d="m14 7 5 5-5 5"></path>
+              </svg>
             </a>
-          </div>
-
-          <div class="steps">
-            <div class="step reveal">
-              <div class="step-number">01</div>
-              <div><span>Etapa 01</span><h3>Conversa inicial</h3><p>Você compartilha o ambiente, as necessidades e as referências que representam o seu estilo.</p></div>
-            </div>
-            <div class="step reveal" style="--delay: 70ms">
-              <div class="step-number">02</div>
-              <div><span>Etapa 02</span><h3>Levantamento</h3><p>Organizamos medidas e informações para entender possibilidades, limites e prioridades.</p></div>
-            </div>
-            <div class="step reveal" style="--delay: 140ms">
-              <div class="step-number">03</div>
-              <div><span>Etapa 03</span><h3>Projeto e escolhas</h3><p>Definimos layout, materiais, acabamentos e detalhes antes de seguir para a execução.</p></div>
-            </div>
-            <div class="step reveal" style="--delay: 210ms">
-              <div class="step-number">04</div>
-              <div><span>Etapa 04</span><h3>Produção e montagem</h3><p>Cada peça ganha forma e é instalada com atenção ao ambiente e ao acabamento final.</p></div>
-            </div>
           </div>
         </div>
       </section>
@@ -423,6 +526,85 @@
             <article class="commitment reveal" style="--delay: 60ms"><span aria-hidden="true">✓</span><h3>Escolhas alinhadas</h3><p>Materiais e acabamentos definidos com você antes da execução.</p></article>
             <article class="commitment reveal" style="--delay: 120ms"><span aria-hidden="true">⌁</span><h3>Montagem cuidadosa</h3><p>Atenção ao móvel, ao ambiente e aos detalhes de finalização.</p></article>
             <article class="commitment reveal" style="--delay: 180ms"><span aria-hidden="true">♡</span><h3>Contato próximo</h3><p>Uma conversa direta para acompanhar dúvidas e decisões.</p></article>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section quote-guide" id="orcamento">
+        <div class="container quote-guide-layout">
+          <div class="quote-copy reveal">
+            <p class="quote-kicker">Antes de pedir seu orçamento</p>
+            <h2>Quatro informações já deixam a conversa muito mais objetiva.</h2>
+            <p class="quote-description">
+              Você não precisa ter um projeto pronto. Algumas informações simples já ajudam a Arte JE
+              a entender melhor o ambiente e direcionar os próximos passos.
+            </p>
+
+            <a
+              class="button quote-button reveal"
+              href="https://wa.me/"
+              target="_blank"
+              rel="noreferrer"
+              data-whatsapp="Olá! Quero solicitar um orçamento com a Arte JE. Ambiente: [informe]. Cidade/bairro: [informe]. Tenho fotos/medidas/referências: [sim/não]."
+            >
+              Pedir orçamento pelo WhatsApp
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14"></path>
+                <path d="m14 7 5 5-5 5"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="quote-checklist">
+            <article class="quote-item reveal">
+              <div class="quote-item-top">
+                <svg class="quote-item-icon" viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M8 39V16l16-9 16 9v23"></path>
+                  <path d="M16 39V25h16v14"></path>
+                </svg>
+                <span class="quote-item-number">01</span>
+              </div>
+              <h3>Qual ambiente?</h3>
+              <p>Cozinha, quarto, closet, sala, home office ou outro espaço que você quer transformar.</p>
+            </article>
+
+            <article class="quote-item reveal" style="--delay: 60ms">
+              <div class="quote-item-top">
+                <svg class="quote-item-icon" viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M24 42s12-10.3 12-22a12 12 0 1 0-24 0c0 11.7 12 22 12 22Z"></path>
+                  <circle cx="24" cy="20" r="4"></circle>
+                </svg>
+                <span class="quote-item-number">02</span>
+              </div>
+              <h3>Onde fica?</h3>
+              <p>Informe cidade e bairro para facilitar a avaliação do atendimento e da montagem.</p>
+            </article>
+
+            <article class="quote-item reveal" style="--delay: 120ms">
+              <div class="quote-item-top">
+                <svg class="quote-item-icon" viewBox="0 0 48 48" aria-hidden="true">
+                  <rect x="7" y="11" width="34" height="26" rx="1"></rect>
+                  <circle cx="18" cy="20" r="3"></circle>
+                  <path d="m11 33 9-8 6 5 5-4 6 7"></path>
+                </svg>
+                <span class="quote-item-number">03</span>
+              </div>
+              <h3>Fotos do espaço</h3>
+              <p>Uma ou duas fotos já ajudam a visualizar paredes, circulação e condições do ambiente.</p>
+            </article>
+
+            <article class="quote-item reveal" style="--delay: 180ms">
+              <div class="quote-item-top">
+                <svg class="quote-item-icon" viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M9 31 31 9l8 8-22 22H9Z"></path>
+                  <path d="m27 13 8 8M14 34l4 4"></path>
+                </svg>
+                <span class="quote-item-number">04</span>
+              </div>
+              <h3>Medidas ou referências</h3>
+              <p>Se tiver medidas aproximadas, inspirações ou imagens salvas, envie junto. Não é obrigatório.</p>
+            </article>
           </div>
         </div>
       </section>

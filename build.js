@@ -33,6 +33,7 @@ await writeFile(join(clientDirectory, "styles.css"), styles);
 await writeFile(join(clientDirectory, "script.js"), script);
 await cp(join(projectDirectory, "public", "logo_JE.png"), join(publicDirectory, "logo_JE.png"));
 await cp(join(projectDirectory, "public", "og.png"), join(publicDirectory, "og.png"));
+await cp(join(projectDirectory, "public", "whatsapp.svg"), join(publicDirectory, "whatsapp.svg"));
 
 const workerSource = `
 const INDEX_HTML = ${JSON.stringify(html)};
